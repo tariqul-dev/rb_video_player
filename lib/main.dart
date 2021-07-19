@@ -1,6 +1,6 @@
-import 'package:flutter/widgets.dart';
-import 'package:video_player/screens/wrapper.dart';
+import 'package:flutter/material.dart';
+import 'package:rb_video_player/video_player_app.dart';
 
 main(List<String> args) {
-  runApp(WrapperScreen());
+  runApp(VideoPlayerApp());
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:video_player/providers/albums_provider.dart';
-import 'package:video_player/screens/home/components/widgets/view_albums.dart';
-import 'package:video_player/screens/loading/loading_screen.dart';
+import 'package:rb_video_player/providers/albums_provider.dart';
+import 'package:rb_video_player/screens/home/components/widgets/album_listview.dart';
+import 'package:rb_video_player/screens/loading/loading_screen.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class HomeBody extends StatelessWidget {
         if (albumProvider.getAlbums!.isEmpty) {
           return LoadingScreen();
         } else {
-          return ViewAlbums(albums: albumProvider.getAlbums);
+          return AlbumsListView(albums: albumProvider.getAlbums);
         }
       },
     );

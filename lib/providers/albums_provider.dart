@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:photo_gallery/photo_gallery.dart';
-import 'package:video_player/config/permission_settings.dart';
+import 'package:rb_video_player/config/permission_settings.dart';
 
 class AlbumsProvider with ChangeNotifier {
   List<Album> _albums = [];

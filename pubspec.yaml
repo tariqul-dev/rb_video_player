@@ -1,4 +1,4 @@
-name: video_player
+name: rb_video_player
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -25,8 +25,10 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   photo_gallery: ^1.0.1
+  transparent_image: ^2.0.0
   provider: ^5.0.0
   permission_handler: ^8.1.2
+
 
 dev_dependencies:
   flutter_test:

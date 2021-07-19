@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_gallery/photo_gallery.dart';
-import 'package:video_player/helper/app_color.dart';
+import 'package:rb_video_player/helper/app_color.dart';
 
 class AlbumTile extends StatelessWidget {
   final IconData icon;
@@ -11,6 +11,9 @@ class AlbumTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: (){
+        Navigator.pushNamed(context, '/videos', arguments: album);
+      },
       leading: Icon(
         this.icon,
         size: 45,

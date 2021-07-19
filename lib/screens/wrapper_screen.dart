@@ -6,6 +6,13 @@ class WrapperScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // return ChangeNotifierProvider(
+    //   create: (context) => AlbumsProvider(),
+    //   child: MaterialApp(
+    //     initialRoute: '/',
+    //     onGenerateRoute: RouteGenerator.routeGenerator,
+    //   ),
+    // );
     return MaterialApp(
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.routeGenerator,
